@@ -1,0 +1,769 @@
+:root {
+    --white: #ffffff;
+    --text-color: #2E2E30;
+    --black: #000000;
+    --yellow: #F9BA50;
+    --darl-grey: #17171A;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+legend {
+    color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    background: var(--black);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+}
+
+h1 {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: justify;
+}
+
+h1, h2 {
+    font-size: 72px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 64px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;  
+    padding: 0 30px;  
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col {
+    margin: 0 16px;
+} 
+
+.between {
+    justify-content: space-between;
+}
+
+
+.logo a {
+    background: url(../img/logo.svg) center center no-repeat;
+    height: 110px;
+    width: 110px;
+    display: block;
+
+}
+
+.address {
+    width: calc(412px - 32px);
+    background: url(../img/loc.svg) left center no-repeat;
+    padding-left: 52px;
+    line-height: 1.6em;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.phone {
+    background: url(../img/phone.svg) left center no-repeat;
+    padding-left: 56px;
+    display: flex;
+    flex-wrap:  wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone a {
+    font-size: 12px;
+    color: var(--white);
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 8px;  
+}
+
+.phone .tel {
+    font-size: 20px;
+    text-decoration: none;    
+}
+
+.header {
+    height: 100%;
+    justify-content: space-between;
+}
+
+#hero {
+    margin-bottom: 24px;    
+}
+
+.hero {
+    width: calc(100% - 32px);
+    position: relative; 
+    height: 1000px;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.hero .img {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-radius: 345px 345px 0 0 ;
+}
+
+.hero .team {
+    width: 330px;
+    top: 84px;
+    left: 0;    
+}
+
+.benefit {
+    height: 134px;
+    width: 410px;
+    bottom: 0;
+    left: 0;
+}
+
+.hero .button {
+    bottom: 40px;
+    right: 112px;
+}
+
+.button a {
+    background: var(--yellow) url(../img/Vector.svg) 40px center no-repeat;
+    width: 278px;
+    height: 56px;
+    display: block;
+    border-radius: 0 28px 28px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    padding-left: 120px;
+    box-sizing: border-box;
+    line-height: 3em;
+    margin-bottom: 24px;
+}
+
+#about {
+    margin-bottom: 234px;
+}
+
+.about_img {
+    width: calc(50% - 32px);
+    position: relative;
+}
+
+.about_img img {
+    width: 100%;
+    height: auto;
+    border-radius: 400px 0 400px 0;
+}
+
+.about_avatar {
+    width: 384px;  
+    height: 384px; 
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: -92px;
+}
+
+.about_avatar img {
+    width: 365px;  
+    height: 384px;
+    border-radius: 50%;
+    left: 193px;
+    position: absolute;
+    transform: translateX(-50%);
+
+}
+
+.about_text {
+    width: calc(100% / 12 * 5 - 32px);
+    line-height: 1.3em;
+}
+
+.about_text p {
+    margin-bottom: 84px;
+}
+
+#trainers {
+    margin-bottom: 128px;
+}
+
+
+.trainer {
+    width: calc(50% - 32px);
+    height: 560px; 
+    position: relative;
+}
+
+.trainer_text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.trainer img {
+    width: 100%;   
+}
+
+.trainer_text h3 {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 24px
+}
+
+.trainer_text span {
+    color: var(--black);
+    -webkit-text-stroke: 2px #ffffff;
+}
+
+#directions {
+    margin-bottom: 128px;
+}
+
+.directions {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.direction {
+    width: 25%;
+    height: 700px;
+    position: relative;
+    text-align: center;
+}
+
+.direction h3 {
+    font-size: 46px;
+    font-weight: 500;
+    color: var(--black);
+    -webkit-text-stroke: 2px #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+.direction img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#schedules {
+    margin-bottom: 102px;
+}
+
+
+.schedule {
+    width: calc(100% / 3 - 32px);
+    background: var(--darl-grey);
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+}
+
+.days_seasons {
+    margin-bottom: 40px;
+}
+
+.schedule p {
+    line-height: 1.2em;
+    margin-bottom: 16px;
+}
+
+.schedule .days {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.schedule .season {
+    display: flex;
+    align-items: center;
+}
+
+.schedule .prize {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.schedule .romotion {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+#instagram {
+    margin-bottom: 102px;
+}
+
+.instagram {
+    width: calc(100% / 3 - 32px);
+    height: 410px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+#footer {
+    margin-bottom: 64px;
+}
+
+.copyright {
+    width: calc(100% / 3 - 32px);
+}
+
+.copyright .logo {
+    margin-bottom: 40px;
+}
+
+.copyright p {
+    margin-bottom: 40px;
+}
+
+.icons {
+    margin-bottom: 40px;
+}
+
+.icons a {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.policy a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.category {
+    padding: 40px 0;
+}
+
+.category a {
+    color: var(--white);
+    margin-bottom: 30px;
+    text-decoration: none;
+    display: block;
+}
+
+.contacts {
+    width: calc(100% / 3 - 32px);
+    font-weight: bold;
+    padding: 40px 0;
+}
+
+.contacts  a {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 12px;
+    color: var(--yellow);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1231px) {
+    .schedule .days {
+        font-size: 30px;
+    }
+    .schedule .prize {
+        font-size: 32px;
+    }
+    .directions {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 1213px) {
+    h1 {
+        font-size: 60px;
+    }
+    .benefit {
+        height: 170px;
+    }
+    .hero .button a {
+        margin-bottom: 62px;
+    }
+    .direction {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .schedule {
+        width: calc(100% / 2 - 32px);
+    } 
+    .schedule .days {
+        font-size: 36px;
+    }
+    .instagram {
+        width: calc(100% / 2 - 32px);
+        margin-bottom: 32px;
+    }
+    .instagram img {
+        height: 100%;
+        width: 100%;
+        padding-bottom: 24px;        
+    }    
+    .center {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 70px;
+    }
+    .schedule p {
+        font-size: 16px;
+    }   
+    .schedule .days {
+        font-size: 24px;
+    }
+    .schedule .season {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    h1 {
+        font-size: 58px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    h1 {
+        font-size: 53px;
+    }
+    .logo {
+        margin-bottom: 24px;
+    }
+    .address {
+        order: 3;
+        margin: 0 auto 24px;
+    }   
+    
+}
+
+@media screen and (max-width: 768px) {    
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 56px;
+        margin-bottom: 54px;
+    }
+
+    .hero .benefit {
+        height: 180px;
+    }
+
+    .hero .button a {
+        margin-bottom: -36px;        
+    }
+
+    .hero {
+        margin-bottom: 64px;
+    }
+
+    .trainer_text h3 {
+        margin-bottom: 74px;
+    }
+
+    .about_img {
+        width: calc(100% - 32px);
+        margin-bottom: 64px;
+    }
+
+    .about_text {
+        width: calc(100% - 32px);
+        margin-bottom: -144px;
+    }
+        
+    .schedule {
+        width: calc(100% / 1 - 32px);
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    h1 {
+        font-size: 41px;
+    }
+
+    h2 {
+        font-size: 52px;
+    }
+
+    .instagram {
+        width: calc(100% / 1 - 32px);
+    }
+
+    .copyright {
+        width: calc(100% / 1 - 32px);
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 32px;
+        margin: -112px 0;
+    }
+
+    h2 {
+        font-size: 50px;    
+        margin-top: 74px;
+    }
+
+    .hero {
+        margin-bottom: -144px;
+    }
+
+    .hero .benefit {
+        width: calc(100% - 32px);
+        height: 366px;
+        flex-direction: column-reverse;
+    }
+
+    .hero .button {
+        bottom: 218px;
+        right: 14px; 
+    }
+
+    .about_img img {
+        margin-bottom: 84px;
+    }
+
+    .about_text {
+        width: calc(100% - 32px);
+
+    }
+
+    .trainer {
+        width: calc(100% - 32px);
+    }
+
+    #footer {
+        width: calc(100% - 32px);
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 32px;
+    }
+
+    .category {
+        width: calc(100% - 32px);
+        text-align: center;
+    }
+
+    .contacts {
+        width: calc(100% - 32px);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 22px;
+        margin: -236px 0;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .logo a {
+        width: 350px;
+    }
+
+    .hero .benefit {
+        height: 536px;
+        font-size: 16px;
+    }   
+
+    .phone {
+        padding-left: 88px;
+        display: flex;
+        flex-wrap:  wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .address {
+        margin-top: 32px;
+    }
+
+    .hero .button a {
+        margin-bottom: 106px;
+    }
+
+    .about .button a {
+        margin-top: -100px;
+    }
+
+    .about_img {
+        margin-top: -100px;
+    }
+
+    .about_img img {
+        border-radius: 457px 0 457px 0; 
+    }
+
+    .about_avatar {
+        width: 255px;
+        height: 248px;
+        position: absolute;
+        left: 95px;
+    }
+
+    .about_avatar img {
+        width: 234px;
+        left: 128px;
+        top: -68px;
+    }
+}
